@@ -1,0 +1,52 @@
+<div style="align-items: center; text-align: center;">
+    <button (click)="req('getAllDataInHtml')">All Data</button>
+    <button (click)="req('getAllDataInHtml')">All Data</button>
+    <button (click)="req('getAllDataInHtml')">All Data</button>
+    <button (click)="req('getAllDataInHtml')">All Data</button>
+</div>
+<div *ngFor="let item of data">
+    <div class="card-container">
+        <h1>
+            <span>{{item.Unit}}</span></h1>
+        <div class="property">
+            <span>Cost:</span>
+            <span>{{item.Cost}}</span>
+        </div>
+        <div class="property">
+            <span>Count:</span>
+            <span>{{item.Count}}</span>
+        </div>
+        <div class="property">
+            <span>Deploy Time:</span>
+            <span>{{item.Deploy_Time}}</span>
+        </div>
+        <div class="property">
+            <span>Hit Speed:</span>
+            <span>{{item.Hit_Speed}}</span>
+        </div>
+        <div class="property">
+            <span>Range:</span>
+            <span>{{item.Range_}}</span>
+        </div>
+        <div class="property">
+            <span>Rarity:</span>
+            <span>{{item.Rarity}}</span>
+        </div>
+        <div class="property">
+            <span>Speed:</span>
+            <span>{{item.Speed}}</span>
+        </div>
+        <div class="property">
+            <span>Target:</span>
+            <span>{{item.Target}}</span>
+        </div>
+        <div class="property">
+            <span>Transport:</span>
+            <span>{{item.Transport}}</span>
+        </div>
+        <div class="property">
+            <span>Type:</span>
+            <span>{{item.Type}}</span>
+        </div>
+    </div>
+</div>
